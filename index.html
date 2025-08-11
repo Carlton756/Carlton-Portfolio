@@ -1,37 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carlton Francis — Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Carlton Francis — Data Analyst & Compliance Officer</title>
+  <meta name="description" content="Carlton Francis — Data Analyst (SQL, Python, Power BI) | Compliance Officer | Open to Work">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#071124;
+      --card:#0f1b2b;
+      --accent:#00d4ff; /* bright cyan */
+      --accent-2:#ff7a59; /* coral */
+      --muted:#9aa8bf;
+      --glass: rgba(255,255,255,0.04);
+      --radius:14px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#071a2a);color:#dbe8fb}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:36px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#072033}
+    h1{margin:0;font-size:26px}
+    .tag{color:var(--muted);font-size:13px}
+    nav a{margin-left:16px;color:var(--muted);font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-top:28px}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:28px;border-radius:18px;box-shadow:0 8px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .intro{font-size:18px;line-height:1.5}
+    .roles{color:var(--accent);font-weight:700}
+    .ctas{margin-top:18px;display:flex;gap:12px}
+    .btn{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#041027;padding:10px 14px;border-radius:12px;font-weight:700;border:none;cursor:pointer}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    .stats{display:flex;gap:12px;margin-top:18px}
+    .stat{background:var(--glass);padding:12px;border-radius:12px;flex:1;text-align:center}
+    .stat h3{margin:0;font-size:16px}
+    .stat p{margin:6px 0 0;color:var(--muted);font-size:13px}
+
+    /* right column */
+    .contact-card{padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+    .contact-card h4{margin:0 0 8px}
+    .pill{display:inline-block;padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:999px;margin:6px 6px 0}
+
+    section{margin-top:28px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);padding:20px;border-radius:14px;border:1px solid rgba(255,255,255,0.02)}
+    .skill-grid{display:flex;flex-direction:column;gap:10px}
+    .skill{display:flex;align-items:center;gap:12px}
+    .skill .dot{width:12px;height:12px;border-radius:4px;background:var(--accent)}
+    .projects a{display:block;padding:12px;margin-bottom:10px;border-radius:10px;background:linear-gradient(90deg, rgba(0,212,255,0.06), rgba(255,122,89,0.03));border:1px solid rgba(255,255,255,0.03)}
+
+    footer{margin:36px 0;color:var(--muted);font-size:13px;text-align:center}
+
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      .grid-3{grid-template-columns:1fr}
+    }
+
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Carlton Francis</h1>
-    <p>Data Analyst | Compliance Officer | Open to Work</p>
-    <a href="mailto:dymnfrncs@gmail.com">dymnfrncs@gmail.com</a> |
-    <a href="https://www.linkedin.com/in/carlton-francis-967435314" target="_blank">LinkedIn</a>
-  </header>
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>Experienced Data Analyst and Compliance Officer skilled in SQL, Python, and Power BI, with a proven ability to analyze complex datasets, ensure compliance, and deliver actionable insights.</p>
-    </section>
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>SQL, Python, Power BI</li>
-        <li>Data Cleaning & Visualization</li>
-        <li>Compliance & Risk Management</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:dymnfrncs@gmail.com">dymnfrncs@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/carlton-francis-967435314" target="_blank">View Profile</a></p>
-    </section>
-  </main>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="avatar">CF</div>
+        <div>
+          <h1>Carlton Francis</h1>
+          <div class="tag">Data Analyst • Compliance Officer • Open to Work</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="hero-card" data-aos="fade-up">
+          <div class="intro">
+            <div style="display:flex;align-items:center;gap:10px;">
+              <h2 style="margin:0">Hi — I’m Carlton.</h2>
+              <span class="tag">He / Him</span>
+            </div>
+            <p style="margin-top:12px">A dedicated and adaptable professional with <strong>9+ years</strong> experience across engineering, government and standards development, and <strong>7 years</strong> in civil & criminal investigations. I'm now focused on applying data analytics to solve business problems.</p>
+            <p class="roles">I'm a <span id="typed"></span><span style="opacity:0.9">.</span></p>
+            <div class="ctas">
+              <a class="btn" href="mailto:dymnfrncs@gmail.com">Email Me</a>
+              <a class="btn ghost" href="https://www.linkedin.com/in/carlton-francis-967435314" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+
+            <div class="stats">
+              <div class="stat">
+                <h3>Le Wagon Alum</h3>
+                <p>Data Analytics Bootcamp — SQL, Python, Power BI</p>
+              </div>
+              <div class="stat">
+                <h3>Investigations</h3>
+                <p>Digital forensics & AML techniques</p>
+              </div>
+              <div class="stat">
+                <h3>Regulatory Compliance</h3>
+                <p>Sanctions, export control & policy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="contact-card" data-aos="zoom-in">
+          <h4>Contact</h4>
+          <div class="pill">Email: <a href="mailto:dymnfrncs@gmail.com">dymnfrncs@gmail.com</a></div>
+          <div class="pill">LinkedIn: <a href="https://www.linkedin.com/in/carlton-francis-967435314" target="_blank">View profile</a></div>
+
+          <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:12px 0">
+          <h4>Quick Pitch</h4>
+          <p style="margin:8px 0;color:var(--muted);font-size:14px">I combine investigative rigour with data analytics to drive compliance and uncover patterns of risk. Seeking roles in Data Analysis, Compliance and Investigations.</p>
+          <div style="margin-top:8px">
+            <a class="pill" href="#projects">See Projects</a>
+          </div>
+        </aside>
+      </div>
+
+      <section id="about" data-aos="fade-up">
+        <div class="card">
+          <h3>About</h3>
+          <p style="color:var(--muted)">A disciplined, self-motivated professional with broad experience across public sector investigations, engineering standards and financial services. Trained in data analytics at Le Wagon (360+ hours) with hands-on experience using SQL (BigQuery), Python, Power BI and Looker Studio. Passionate about turning messy data into actionable insights.</p>
+        </div>
+      </section>
+
+      <section id="skills" data-aos="fade-up">
+        <h3 style="margin-bottom:12px">Skills</h3>
+        <div class="grid-3">
+          <div class="card">
+            <h4>Data & Tools</h4>
+            <div class="skill-grid">
+              <div class="skill"><div class="dot" style="background:#00d4ff"></div><div>SQL (BigQuery) — data modeling, joins, ETL/ELT</div></div>
+              <div class="skill"><div class="dot" style="background:#7ef59a"></div><div>Python — analysis, scripting, pandas, plotly</div></div>
+              <div class="skill"><div class="dot" style="background:#ffb86b"></div><div>Power BI & Looker Studio — interactive dashboards & DAX</div></div>
+              <div class="skill"><div class="dot" style="background:#c48bff"></div><div>Excel & Google Sheets — advanced formulas & cleaning</div></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h4>Compliance & Investigation</h4>
+            <div class="skill-grid">
+              <div class="skill"><div class="dot" style="background:#ffd166"></div><div>Regulatory Compliance — sanctions & export control</div></div>
+              <div class="skill"><div class="dot" style="background:#ff7a59"></div><div>Digital Forensics & AML Techniques</div></div>
+              <div class="skill"><div class="dot" style="background:#ff5c8a"></div><div>Multi-agency & cross-border investigations</div></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h4>Soft Skills & Leadership</h4>
+            <div class="skill-grid">
+              <div class="skill"><div class="dot" style="background:#9bd3ff"></div><div>Team leadership & mentoring</div></div>
+              <div class="skill"><div class="dot" style="background:#b9ffb7"></div><div>Communication & stakeholder engagement</div></div>
+              <div class="skill"><div class="dot" style="background:#f5c6ff"></div><div>Problem solving & project coordination</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" data-aos="fade-up">
+        <h3 style="margin-bottom:12px">Projects</h3>
+        <div class="projects card">
+          <a href="https://github.com/Carlton756/RDAMP_LMS_Analytics_RCHG" target="_blank">RDAMP_LMS_Analytics_RCHG — LMS analytics project for RCHG</a>
+          <a href="https://github.com/Carlton756/RDAMP-Dimensional-Model-Power-BI" target="_blank">RDAMP-Dimensional-Model-Power-BI — dimensional modelling & reporting</a>
+          <a href="https://github.com/Carlton756/RDAMP-Sales-Analysis" target="_blank">RDAMP-Sales-Analysis — sales performance & recommendations</a>
+          <a href="https://github.com/Carlton756/Market-Trend-Analysis-of-Data-Roles-in-the-U.S." target="_blank">Market-Trend-Analysis-of-Data-Roles-in-the-U.S. — bootcamp final project</a>
+          <div style="margin-top:12px;color:var(--muted)">Explore my GitHub for full notebooks, SQL, and dashboard examples.</div>
+        </div>
+      </section>
+
+      <section id="experience" data-aos="fade-up">
+        <h3>Experience (Highlights)</h3>
+        <div class="grid-3" style="margin-top:12px">
+          <div class="card">
+            <h4>HM Revenue & Customs</h4>
+            <p style="color:var(--muted);margin:6px 0">Compliance Officer — Dec 2017 to Aug 2024. Led investigations, managed sanctions and export control enforcement, applied digital forensics and AML techniques, and trained junior staff.</p>
+          </div>
+          <div class="card">
+            <h4>JN Bank UK</h4>
+            <p style="color:var(--muted);margin:6px 0">Roaming Teller & Administrative Assistant — Sep 2015 to Dec 2017. Operations, cash handling, and training support across branches.</p>
+          </div>
+          <div class="card">
+            <h4>Bureau of Standards Jamaica</h4>
+            <p style="color:var(--muted);margin:6px 0">Engineer/Scientific Officer — Jun 2006 to Jul 2015. Standards development and lab supervision (ISO 17025).</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" data-aos="fade-up">
+        <h3>Contact Me</h3>
+        <div class="card" style="margin-top:12px">
+          <p style="color:var(--muted)">Interested in hiring, collaboration or a chat about data? Send an email or connect on LinkedIn.</p>
+          <div style="margin-top:12px"><a class="btn" href="mailto:dymnfrncs@gmail.com">dymnfrncs@gmail.com</a> <a class="btn ghost" href="https://www.linkedin.com/in/carlton-francis-967435314" target="_blank">LinkedIn</a></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      © Carlton Francis — Built with attention to detail • Available for Data & Compliance roles
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    AOS.init({duration:700,once:true});
+    // typed roles
+    new Typed('#typed',{strings:["Data Analyst","SQL & Python specialist","Power BI dashboard maker","Compliance & Investigations specialist"],typeSpeed:50,backSpeed:30,backDelay:1500,loop:true});
+  </script>
 </body>
 </html>
